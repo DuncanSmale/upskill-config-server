@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:DuncanSmale/upskill-config.git
+          clone-on-start: true
+
+  security:
+    user:
+      name: root
+      password: root
